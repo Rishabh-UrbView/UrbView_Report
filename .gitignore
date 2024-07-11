@@ -1,0 +1,18 @@
+# Ignore LaTeX build files
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+
+# Ignore PDFs under Report/
+Report/*.pdf
+
+# Ignore all LaTeX build files under Report/
+Report/*.aux
+Report/*.bbl
+Report/*.blg
+Report/*.log
+Report/*.out
+Report/*.toc

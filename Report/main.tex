@@ -1,0 +1,68 @@
+\documentclass[runningheads]{llncs}
+
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{subcaption}
+
+
+\usepackage{fancyhdr} % For custom headers/footers
+
+% Define a command to include your logo
+\newcommand{\mylogo}{\includegraphics[height=18pt]{./figures/intro_rishabh/Urbview_logo_left_colored.png}} % Adjust height as needed
+
+% Set up fancy headers and footers
+\pagestyle{fancy}
+\fancyhf{} % Clear default headers and footers
+\fancyhead[C]{\mylogo} % Place your logo in the center of the header
+\fancyfoot[C]{\thepage} % Place page number in the center of the footer
+
+% Uncomment the following lines if you use the hyperref package
+% to display URLs in blue roman font according to Springer's eBook style:
+%\usepackage{color}
+%\renewcommand\UrlFont{\color{blue}\rmfamily}
+%\urlstyle{rm}
+
+\begin{document}
+
+
+
+\begin{titlepage}
+	\centering
+	\includegraphics[width=0.3\textwidth]{./figures/intro_rishabh/Urbview_logo_left_colored.png}\par\vspace{1cm}
+	{\fontfamily{lmss}\selectfont % Set font to Latin Modern Sans Serif
+		\scshape\Huge UrbView Report on Neukölln \par}
+	\vspace{2cm}
+	{\fontfamily{lmss}\selectfont % Set font to Latin Modern Sans Serif
+		\Large UrbView GbR \par}
+	\vfill
+	{\large \today\par}
+\end{titlepage}
+%\begin{abstract}
+%Your abstract text here.
+%\keywords{Neukölln \and Urban Analysis \and UrbView \and City Planning \and Data Visualization.}
+%\end{abstract}
+
+\section{Introduction}
+\input{tex/intro.tex}
+
+\section{Urban Network Analysis}
+
+Unveiling mobility patterns is crucial for understanding and addressing various urban challenges, including crime rates. By analyzing how people move through the city's streets and identifying areas of high pedestrian density, urban planners and policymakers can gain valuable insights into potential hotspots for criminal activity. Mobility patterns can reveal the dynamics of how people use public spaces, which in turn affects their safety and security. For instance, areas with high foot traffic might experience different types of crimes compared to less populated areas. By integrating urban network analysis into crime prevention strategies, it is possible to design more effective interventions, improve the allocation of law enforcement resources, and enhance overall urban safety. This analysis is not only vital for crime prevention but also for optimizing urban design to promote safer and more vibrant communities.
+
+\input{tex/urban_netork.tex}
+
+\section{Urban Syntax}
+\subsection{Urban Design}
+\input{tex/adri_urban_syntax}
+\subsection{Points of Interest}
+
+\section{Crime spatial context }
+\input{tex/crime_spatial_context}
+
+
+% ---- Bibliography ----
+% BibTeX users should specify bibliography style 'splncs04'.
+% References will then be sorted and formatted in the correct style.
+\bibliographystyle{splncs04}
+\bibliography{mybibliography}
+\end{document}
